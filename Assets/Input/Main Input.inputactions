@@ -117,7 +117,7 @@
             "id": "ca30c638-2b71-441f-944d-616b40c26499",
             "actions": [
                 {
-                    "name": "Pause",
+                    "name": "Resume",
                     "type": "Button",
                     "id": "aa1fef16-a294-4a96-ad54-db2c1407536c",
                     "expectedControlType": "",
@@ -134,7 +134,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Pause",
+                    "action": "Resume",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

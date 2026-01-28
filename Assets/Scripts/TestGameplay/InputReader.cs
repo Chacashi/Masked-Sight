@@ -83,8 +83,10 @@ public class InputReader : ScriptableObject, MainInput.IPlayerActions, MainInput
     {
         if (context.performed)
         {
-            PauseEvent?.Invoke();
+            Debug.Log("Pausa activada desde Player Map");
             SetUI();
+            PauseEvent?.Invoke();
+           
         }
 
     }
@@ -96,6 +98,7 @@ public class InputReader : ScriptableObject, MainInput.IPlayerActions, MainInput
     {
         if (context.performed)
         {
+            Debug.Log("Resume activado desde UI Map"); // LOG 2
             ResumeEvent?.Invoke();
             SetGameplay();
         }
