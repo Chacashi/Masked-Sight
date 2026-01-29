@@ -4,8 +4,12 @@ public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance;
 
+    [Header("Sources")]
     [SerializeField] private AudioSource musicSource;
     [SerializeField] private AudioSource sfxSource;
+
+    [Header("Sounds Data")]
+    [SerializeField] private SoundData menuMusic;
 
     private void Awake()
     {
@@ -19,14 +23,22 @@ public class AudioManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
+    private void Start()
+    {
+        Play(menuMusic);
+    }
     public void Play(SoundData sound)
     {
         if (sound == null || sound.clip == null) return;
 
         if (sound.type == SoundType.Music)
+        {
             PlayMusic(sound);
+        }
         else
+        {
             PlaySFX(sound);
+        }
     }
 
     private void PlayMusic(SoundData music)
