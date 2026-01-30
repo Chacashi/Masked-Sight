@@ -27,4 +27,8 @@ public class AudioSettingsSO : ScriptableObject
         mixer.SetFloat(param, Mathf.Log10(value) * 20f);
         PlayerPrefs.SetFloat(param, value);
     }
+
+    public float GetMaster() => PlayerPrefs.GetFloat("Master", 0.8f);
+    public float GetMusic() => PlayerPrefs.GetFloat("Music", 0.8f);
+    public float GetSFX() => PlayerPrefs.GetFloat("SFX", 0.8f);
 }

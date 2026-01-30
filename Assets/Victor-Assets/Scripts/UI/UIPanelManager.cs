@@ -30,7 +30,7 @@ public class UIPanelManager : MonoBehaviour
         PanelData panel = panels[index];
 
         panel.isVisible = true;
-        panel.panel.DOAnchorPos(panel.visiblePosition, panel.duration).SetEase(panel.ease);
+        panel.panel.DOAnchorPos(panel.visiblePosition, panel.duration).SetEase(panel.ease).SetUpdate(true); ;
     }
 
     public void HidePanel(int index)
@@ -40,7 +40,7 @@ public class UIPanelManager : MonoBehaviour
         PanelData panel = panels[index];
 
         panel.isVisible = false;
-        panel.panel.DOAnchorPos(panel.hiddenPosition, panel.duration).SetEase(panel.ease);
+        panel.panel.DOAnchorPos(panel.hiddenPosition, panel.duration).SetEase(panel.ease).SetUpdate(true); ;
     }
 
     public void ExitGame()

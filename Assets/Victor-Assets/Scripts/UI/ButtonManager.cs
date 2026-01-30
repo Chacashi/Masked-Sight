@@ -22,7 +22,7 @@ public class ButtonManager : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
 
     private void Update()
     {
-        transform.localScale = Vector3.Lerp(transform.localScale, targetScale, Time.deltaTime * speed);
+        transform.localScale = Vector3.Lerp(transform.localScale, targetScale, Time.unscaledDeltaTime * speed);
     }
 
     public void OnPointerEnter(PointerEventData eventData)

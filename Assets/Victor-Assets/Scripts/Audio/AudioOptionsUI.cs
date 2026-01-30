@@ -12,6 +12,10 @@ public class AudioOptionsUI : MonoBehaviour
     {
         settings.Load();
 
+        master.SetValueWithoutNotify(settings.GetMaster());
+        music.SetValueWithoutNotify(settings.GetMusic());
+        sfx.SetValueWithoutNotify(settings.GetSFX());
+
         master.onValueChanged.AddListener(settings.SetMaster);
         music.onValueChanged.AddListener(settings.SetMusic);
         sfx.onValueChanged.AddListener(settings.SetSFX);
