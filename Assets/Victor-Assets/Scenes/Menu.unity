@@ -3494,14 +3494,19 @@ MonoBehaviour:
   levels:
   - name: TUTORIAL
     image: {fileID: 21300000, guid: ee1581d6b4e068242b1638fd0985e560, type: 3}
+    sceneName: 
   - name: NIVEL 1
     image: {fileID: 21300000, guid: 804010a0088aa6b4fbecbb88a23bffcb, type: 3}
+    sceneName: 
   - name: NIVEL 2
     image: {fileID: 21300000, guid: 1304c7e55d484674eb10f76a19aaf09c, type: 3}
+    sceneName: 
   - name: NIVEL 3
     image: {fileID: 21300000, guid: 0209a8173f8dfc84ea1000f55da92f91, type: 3}
+    sceneName: Level3
   - name: NIVEL 4
     image: {fileID: 21300000, guid: 257757871b333904d891a3458449a486, type: 3}
+    sceneName: Level4
 --- !u!4 &768319197
 Transform:
   m_ObjectHideFlags: 0
@@ -4922,6 +4927,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LoadGameTest
   menuMusic: {fileID: 11400000, guid: d9fb2f0b8b4397a4b8dfd1a4f37b82b7, type: 2}
+  levelSelector: {fileID: 768319196}
 --- !u!4 &1094202373
 Transform:
   m_ObjectHideFlags: 0

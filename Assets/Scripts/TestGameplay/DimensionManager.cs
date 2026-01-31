@@ -49,6 +49,8 @@ public class DimensionManager : MonoBehaviour
 
     private void ChangueDimension()
     {
+        if (Time.timeScale == 0f) return;
+
         isAlterWorld = !isAlterWorld;
 
         if(effectChangueDimension!= null)

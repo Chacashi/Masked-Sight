@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class LoadGameTest : MonoBehaviour
 {
     [SerializeField] private SoundData menuMusic;
+    [SerializeField] private LevelSelector levelSelector;
 
     private void Start()
     {
@@ -12,6 +13,7 @@ public class LoadGameTest : MonoBehaviour
 
     public void LoadGame()
     {
-        SceneManager.LoadScene("GameTest");
+        string sceneToLoad = levelSelector.GetCurrentSceneName();
+        SceneManager.LoadScene(sceneToLoad);
     }
 }

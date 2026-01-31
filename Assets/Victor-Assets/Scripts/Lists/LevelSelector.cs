@@ -4,12 +4,15 @@ using TMPro;
 
 public class LevelSelector : MonoBehaviour
 {
+    [Header("UI")]
     public Image levelImage;
     public TextMeshProUGUI levelTitle;
 
+    [Header("Buttons")]
     public Button nextButton;
     public Button previousButton;
 
+    [Header("Levels")]
     public LevelData[] levels;
     private int currentIndex = 0;
 
@@ -43,5 +46,10 @@ public class LevelSelector : MonoBehaviour
 
         previousButton.interactable = currentIndex > 0;
         nextButton.interactable = currentIndex < levels.Length - 1;
+    }
+
+    public string GetCurrentSceneName()
+    {
+        return levels[currentIndex].sceneName;
     }
 }
