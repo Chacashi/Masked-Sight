@@ -31,11 +31,12 @@ public class DimensionManager_DarkLevel : MonoBehaviour
     {
         if (glassMask != null)
         {
-            glassMask.SetActive(true); 
-            glassMask.transform.localScale = Vector2.one * maxScale;
+            glassMask.SetActive(true);
+            glassMask.transform.localScale = Vector2.zero;
         }
 
-        isAlterWorld = false;
+        isAlterWorld = true;
+        scaleTo = Vector2.one * maxScale;
     }
 
     private void ChangueDimension()
