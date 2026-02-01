@@ -1123,6 +1123,14 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: -2109059
       objectReference: {fileID: 0}
+    - target: {fileID: 9657692507870984, guid: 3eb3baf265717404399a54fe07f0098a, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9657692507870984, guid: 3eb3baf265717404399a54fe07f0098a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -6696784038445164978, guid: c62616be10ea002448416cbb7843c210, type: 3}
     - target: {fileID: 501334161711376576, guid: 3eb3baf265717404399a54fe07f0098a, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0

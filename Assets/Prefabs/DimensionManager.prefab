@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DimensionManager
   glassMask: {fileID: 0}
   effectChangueDimension: {fileID: 0}
-  expansionSpeed: 3
+  expansionSpeed: 7
   maxScale: 20
   groupWordNormal: {fileID: 0}
   groupAlterWord: {fileID: 0}
