@@ -12,8 +12,11 @@ EditorBuildSettings:
     path: Assets/Victor-Assets/Scenes/GameTest.unity
     guid: 673aa958436f47d48820ccdc337a156f
   - enabled: 1
-    path: Assets/Scenes/Game.unity
+    path: Assets/Scenes/Level1.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Level2.unity
+    guid: 2408aaa4e0b524749946752b96a9b758
   - enabled: 1
     path: Assets/Victor-Assets/Scenes/Level3.unity
     guid: eccedff938f5ad94d8d143321a57fbe7

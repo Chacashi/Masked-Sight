@@ -812,8 +812,8 @@ Canvas:
   m_GameObject: {fileID: 169559424}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1139450835}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -823,7 +823,7 @@ Canvas:
   m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 110332737
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &169559428
@@ -3494,13 +3494,13 @@ MonoBehaviour:
   levels:
   - name: TUTORIAL
     image: {fileID: 21300000, guid: ee1581d6b4e068242b1638fd0985e560, type: 3}
-    sceneName: 
+    sceneName: Tutorial
   - name: NIVEL 1
     image: {fileID: 21300000, guid: 804010a0088aa6b4fbecbb88a23bffcb, type: 3}
-    sceneName: 
+    sceneName: Level1
   - name: NIVEL 2
     image: {fileID: 21300000, guid: 1304c7e55d484674eb10f76a19aaf09c, type: 3}
-    sceneName: 
+    sceneName: Level2
   - name: NIVEL 3
     image: {fileID: 21300000, guid: 0209a8173f8dfc84ea1000f55da92f91, type: 3}
     sceneName: Level3
@@ -7436,8 +7436,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 80290183
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 2968377873551174926, guid: 0931e0a9596fe80439ec700aba337124, type: 3}
