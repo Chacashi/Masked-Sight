@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ground
   - Door
+  - Dead
   layers:
   - Default
   - TransparentFX
