@@ -1608,6 +1608,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1485030207}
     - target: {fileID: 2239438915927726507, guid: 702cc1273752b60499a0efb49134afd6, type: 3}
+      propertyPath: playerAnimations
+      value: 
+      objectReference: {fileID: 9006939679276353037}
+    - target: {fileID: 2239438915927726507, guid: 702cc1273752b60499a0efb49134afd6, type: 3}
       propertyPath: effectChangueDimension
       value: 
       objectReference: {fileID: 1750334434}
@@ -1884,6 +1888,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53512b3c07c49124e921fa2c0b279005, type: 3}
+--- !u!114 &9006939679276353037 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7982270120896302585, guid: 53512b3c07c49124e921fa2c0b279005, type: 3}
+  m_PrefabInstance: {fileID: 9006939679276353036}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f15b673953dd501468fbe4f0c2975c84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

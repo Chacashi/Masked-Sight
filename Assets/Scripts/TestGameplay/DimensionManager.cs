@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class DimensionManager : MonoBehaviour
 {
+    [SerializeField] private PlayerAnimations playerAnimations;
+
     [SerializeField] private GameObject glassMask;
     [SerializeField] private ParticleSystem effectChangueDimension;
 
@@ -51,7 +53,8 @@ public class DimensionManager : MonoBehaviour
 
         isAlterWorld = !isAlterWorld;
 
-        
+        playerAnimations.SetMask(isAlterWorld);
+
         if (effectChangueDimension != null)
         {
             effectChangueDimension.gameObject.SetActive(true);

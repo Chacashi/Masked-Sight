@@ -15,7 +15,8 @@ public class PlayerActions : MonoBehaviour
     [SerializeField] private float forceJump;
     private bool canJump = true;
 
-
+    [Header("Animations")]
+    [SerializeField] private PlayerAnimations playerAnimations;
 
     private Rigidbody2D rb;
 
@@ -50,7 +51,9 @@ public class PlayerActions : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.linearVelocity = new Vector2(  inputValue * speed, rb.linearVelocity.y );
+        rb.linearVelocity = new Vector2(inputValue * speed, rb.linearVelocity.y);
+
+        Flip();
     }
     #endregion
 
@@ -59,20 +62,35 @@ public class PlayerActions : MonoBehaviour
     #region Salto
     private void Jump()
     {
-        if(!canJump)
+        if (!canJump)
             return;
-        rb.AddForce(Vector2.up * forceJump,ForceMode2D.Impulse);
-        canJump= false;
+        rb.AddForce(Vector2.up * forceJump, ForceMode2D.Impulse);
+        canJump = false;
+
+        playerAnimations.SetGrounded(false);
     }
 
-
+    private void Flip()
+    {
+        if (inputValue > 0.01f)
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+        }
+        else if (inputValue < -0.01f)
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
+        }
+    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.CompareTag("ground"))
-        canJump = true;
+        {
+            canJump = true;
+            playerAnimations.SetGrounded(true);
+        }
     }
 
     #endregion
-    
+
 }
