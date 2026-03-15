@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: MenuMusic
   m_EditorClassIdentifier: Assembly-CSharp::SoundData
   type: 0
-  clip: {fileID: 8300000, guid: 5c674ee0af748ee4c96c492f804c744e, type: 3}
+  clip: {fileID: 8300000, guid: 98751f22273743d4e982dadc58dc795b, type: 3}
   volume: 1
   loop: 1

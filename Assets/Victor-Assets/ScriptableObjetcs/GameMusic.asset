@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: GameMusic
   m_EditorClassIdentifier: Assembly-CSharp::SoundData
   type: 0
-  clip: {fileID: 8300000, guid: 186cd3265f74c0b4fa6eddfc14b42386, type: 3}
+  clip: {fileID: 8300000, guid: 224a3bebf8b13b94caca118ae68b7de0, type: 3}
   volume: 1
   loop: 1

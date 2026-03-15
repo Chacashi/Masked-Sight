@@ -36,7 +36,7 @@ public class DimensionManager : MonoBehaviour
 
     private void Start()
     {
-       
+        Debug.Log("Scale inicial: " + glassMask.transform.localScale);
         if (glassMask != null)
         {
             glassMask.SetActive(true); 
@@ -44,7 +44,9 @@ public class DimensionManager : MonoBehaviour
         }
 
         ActivateGroup(groupAlterWord, false); 
-        ActivateGroup(groupWordNormal, true); 
+        ActivateGroup(groupWordNormal, true);
+
+        Debug.Log("Scale final start: " + glassMask.transform.localScale);
     }
 
     private void ChangueDimension()
